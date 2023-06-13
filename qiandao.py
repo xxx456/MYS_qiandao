@@ -26,7 +26,7 @@ headers = {
 
 data = {"act_id":"e202304121516551","region":"prod_gf_cn","uid":"113150520","lang":"zh-cn"}
 
-send = requests.post(url=url,headers=headers,data=data)
+send = requests.post(url=url,headers=headers,json=data)
 print(send.text)
 
 
