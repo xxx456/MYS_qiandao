@@ -1,5 +1,5 @@
 import requests
-
+import time
 #登陆
 url = "https://api-takumi.mihoyo.com/event/luna/sign"
 
@@ -29,6 +29,7 @@ data = {"act_id":"e202304121516551","region":"prod_gf_cn","uid":"113150520","lan
 send = requests.post(url=url,headers=headers,json=data)
 print(send.text)
 
+time.sleep(3)
 
 #签到
 url = "https://api-takumi.mihoyo.com/event/luna/info?lang=zh-cn&act_id=e202304121516551&region=prod_gf_cn&uid=113150520"
