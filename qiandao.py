@@ -1,7 +1,7 @@
 import requests
 import time
 
-print("大号签到“)
+print("大号签到")
 #登陆
 url1 = "https://api-takumi.mihoyo.com/event/luna/sign"
 
